@@ -82,3 +82,19 @@ const result = wordArray.filter((word) => word === "et").length;
 console.log(result);
 
 // Bonus 2
+
+function checkPalindrome(phrase) {
+  const phraseClean = phrase.toLowerCase().replace(/[^a-zA-Z]/g, "");
+  let phraseCleanReverse = "";
+  for (let i = phraseClean.length - 1; i >= 0; i--) {
+    phraseCleanReverse += phraseClean[i];
+  }
+  if (phraseClean === phraseCleanReverse) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// console.log(checkPalindrome("Amor, Roma"));
+console.log(checkPalindrome("A man, a plan, a canal, Panama!"));
