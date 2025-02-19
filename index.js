@@ -68,3 +68,17 @@ if (hacker1 === hacker2) {
 }
 
 // Bonus
+
+const longText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus efficitur dolor vel rutrum. Curabitur pulvinar ligula vitae purus consectetur ullamcorper. Pellentesque arcu nisl, fringilla at tincidunt at, suscipit at erat. Maecenas at mi ut nunc imperdiet vehicula ac sit amet eros. Donec cursus lacus gravida ante pharetra scelerisque. Aenean scelerisque feugiat iaculis. Aliquam vel orci quis ex porttitor gravida. Phasellus placerat posuere ligula vitae eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse pretium nunc consectetur nulla fringilla viverra. Etiam eu nibh ac mi volutpat tempus at et massa. Maecenas ut magna nulla.Vestibulum id massa vitae libero aliquam tristique. Donec auctor nisl lobortis nisi interdum facilisis. Quisque a blandit orci, at malesuada nibh. Vestibulum congue viverra justo et malesuada. Sed nec orci ullamcorper neque dictum fermentum. Nulla mattis, odio at interdum gravida, justo tellus vestibulum risus, sed porta lorem felis eu nibh. Suspendisse nec diam a velit vehicula egestas. Integer eu felis ullamcorper lacus aliquet tempus vitae non mi. Mauris nisl felis, blandit et volutpat id, aliquam eu lacus. Curabitur in diam nec lacus imperdiet fermentum. Praesent fringilla eu eros eu faucibus. Phasellus bibendum purus eget enim mollis sollicitudin. Nulla lacus velit, pellentesque vel ipsum vel, suscipit ullamcorper tellus.Etiam sagittis sapien nisl, vestibulum tempor massa commodo non. Fusce aliquam pharetra eros, sed faucibus eros. Proin nec finibus arcu, ac varius nibh. Duis ligula arcu, gravida quis imperdiet at, rutrum sed ligula. Proin tortor quam, gravida sed luctus sed, scelerisque in ex. Etiam in posuere nisl, sit amet convallis leo. Vestibulum enim dolor, euismod luctus magna non, faucibus feugiat libero. Nam odio justo, volutpat non faucibus et, sollicitudin sit amet nulla. Sed commodo viverra erat, non dapibus sapien fringilla sit amet. Sed quis mauris risus. Suspendisse porta neque a diam euismod, ut imperdiet felis pretium. In congue auctor lacus, a dignissim nisl. Vivamus sollicitudin dictum malesuada.";
+
+const longTextClean = longText.replace(/[^a-zA-Z ]/g, "");
+
+const wordArray = longTextClean.split(" ");
+console.log("Number of words : ", wordArray.length);
+
+const result = wordArray.filter((word) => word === "et").length;
+
+console.log(result);
+
+// Bonus 2
